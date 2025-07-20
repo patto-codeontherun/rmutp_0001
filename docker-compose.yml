@@ -7,9 +7,4 @@ services:
     environment:
       - POSTGRES_DB=nabhatra
       - POSTGRES_USER=nabhatra
-      - POSTGERS_PASSWORD=nabhatra
-
-
-
-
-  
+      - POSTGRES_PASSWORD=nabhatra
