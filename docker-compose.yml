@@ -8,3 +8,17 @@ services:
       - POSTGRES_DB=nabhatra
       - POSTGRES_USER=nabhatra
       - POSTGRES_PASSWORD=nabhatra
+  web: 
+    image: prawee/strapi:latest
+    container_name: my_app_compose
+    ports:
+      - "8080:1337"
+    environment: 
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_NAME: nabhatra
+      DATABASE_USERNAME: nabhatra
+      DATABASE_PASSWORD: nabhatra
+    depends_on:
+      - db
+    
