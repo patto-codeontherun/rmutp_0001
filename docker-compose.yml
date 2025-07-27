@@ -12,7 +12,7 @@ services:
     image: prawee/strapi:latest
     container_name: my_app_compose
     ports:
-      - "8080=1337"
+      - "8080:1337"
     environment: 
       - DATABASE_HOST=db
       - DATABASE_PORT=5432
