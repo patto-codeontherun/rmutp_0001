@@ -1,0 +1,18 @@
+ { 
+  "kind": "collectionType", 
+  "collectionName": "card_ids",
+  "info": {
+    "singularName": "card-id",
+    "pluralName": "card-ids",
+    "displayName": "CardId"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "cardId": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
